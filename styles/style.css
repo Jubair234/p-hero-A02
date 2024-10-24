@@ -1,0 +1,238 @@
+/* font family links */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* universal styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    
+}
+
+
+/* shared styles  */
+.common-width{
+    width: 80%;
+    margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+}
+.primary-text{
+    color: rgb(230, 83, 60);
+
+}
+.text-color {
+    color: rgb(255, 255, 255);
+
+}
+.text-light{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary{
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+/* header style here  */
+.header-container{
+    padding-top: 60px;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 5) 100%);
+
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.navlinks{
+    list-style: none;
+    
+}
+.nav-link{
+    text-decoration: none;
+    margin: 0 40px;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+
+}
+
+
+#active{
+    padding: 8px 20px 8px 20px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    
+
+}
+.menu{
+    display: none;
+}
+
+
+/* header banner styles  */
+.banner{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.banner-content{
+    max-width:550px ;
+}
+
+.banner-title{
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+#fancy-text{
+   
+  font-family: "Dancing Script", cursive;
+  font-weight: normal;
+
+}
+.banner-discription {
+    margin-bottom: 20px;
+    padding: 0 10px 0 0;
+}
+button{
+    cursor: pointer;
+}
+
+.btn{
+    margin-right: 10px;
+}
+.btn-secondary{
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background: #00000020;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+.banner-imgage{
+    position: relative;
+    left: -100px;
+}
+/* Floting boxs  */
+.float{
+width: 150px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+padding: 10px 0px 10px 10px;
+color: #ffffff;
+font-weight: 400px;
+text-align: left;
+}
+.float-text{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#move-up{
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
+
+#move-down{
+    position: absolute;
+    bottom: 100px;
+    right: 250px;
+    width: 180px;
+}
+
+
+.box{
+    align-items: center;
+    
+}
+.box-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(230, 83, 60);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* media query Styles   */
+
+@media screen and (max-width: 576px) {
+    .common-width{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .navlinks{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner-title{
+        font-size: 2.5rem;
+    }
+
+    .btn-primary,.btn-secondary{
+        padding: 10px 18px;
+    }
+
+    .banner-imgage{
+        position: relative;
+        left: 0px;
+    }
+    
+    #move-up{
+        position: absolute;
+        top: 80px;
+        left: 190px;
+    }
+
+    #move-down{
+        position: absolute;
+        bottom: 250px;
+        right: 165px;
+        width: 180px;
+    }
+    
+
+    
+}
