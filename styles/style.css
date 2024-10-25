@@ -17,6 +17,10 @@
     width: 80%;
     margin: 0 auto;
 }
+main>section{
+    padding-top:50px ;
+}
+
 .display-flex{
     display: flex;
 }
@@ -41,6 +45,15 @@
     font-size: 18px;
     font-weight: 600;
     
+}
+.section-title{
+color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 48px;
+font-weight: 900;
+margin-bottom: 10px;
+
+
 }
 
 /* header style here  */
@@ -83,6 +96,11 @@
 }
 .menu{
     display: none;
+}
+
+.habits,.run-mile{
+    width: 100%;
+    background: #000;
 }
 
 
@@ -134,6 +152,7 @@ button{
 .banner-imgage{
     position: relative;
     left: -100px;
+    bottom: -4px;
 }
 /* Floting boxs  */
 .float{
@@ -185,9 +204,76 @@ text-align: left;
 
 
 
+/* habits styles here  */
 
 
 
+.habit-content{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.habits-card-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.habit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.habit-card .imgbox{
+    max-width: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+   
+}
+.imgbox img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.card-text{
+    text-align: center;
+    padding: 20px 50px;
+}
+.card-text h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* run extra mile style  */
+.run-container{
+    align-items: center;
+    height: 400px;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 0 50px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+.run-content{
+    padding: 20px;
+}
+.run-img{
+    width: 100%;
+    height : auto;
+    border-radius: 18px;
+}
+.run-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+}
 
 /* media query Styles   */
 
@@ -203,8 +289,12 @@ text-align: left;
         display: block;
     }
 
-    .banner{
+    .banner , .run-container{
         flex-direction: column;
+    }
+
+    .run-container{
+        height: auto;
     }
 
     .banner-title{
@@ -212,7 +302,8 @@ text-align: left;
     }
 
     .btn-primary,.btn-secondary{
-        padding: 10px 18px;
+        padding: 10px 14px;
+        gap: 0 20px;
     }
 
     .banner-imgage{
@@ -233,6 +324,15 @@ text-align: left;
         width: 180px;
     }
     
+
+    /* habits media style here  */
+    .section-title{
+        font-size: 2rem;
+    }
+
+    .habits-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    } 
 
     
 }
