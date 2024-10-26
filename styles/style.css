@@ -18,7 +18,8 @@
     margin: 0 auto;
 }
 main>section{
-    padding-top:50px ;
+    padding-top:50px;
+    padding-bottom: 50px;
 }
 
 .display-flex{
@@ -98,7 +99,7 @@ margin-bottom: 10px;
     display: none;
 }
 
-.habits,.run-mile{
+.habits,.run-mile,.bmi{
     width: 100%;
     background: #000;
 }
@@ -263,16 +264,124 @@ text-align: left;
 }
 .run-content{
     padding: 20px;
+
+}
+.run-content h3, .run-content p, .run-content button{
+    margin-bottom: 20px;
+    
+}
+.text-space{
+    padding-right: 40px;
 }
 .run-img{
-    width: 100%;
+    width: 80%;
     height : auto;
     border-radius: 18px;
+    padding: 20px;
 }
 .run-img img{
     width: 100%;
     height: auto;
     border-radius: 18px;
+}
+
+
+/* bmi page style here  */
+.bmi-content{
+    max-width:550px ;
+    margin: 0 auto;
+}
+
+
+
+/* bmi calculator page  */
+
+
+.bmi-calculator{
+    width: 100%;
+    margin: 60px auto;
+    background: rgb(34, 34, 34);
+    height: 500px;
+    
+}
+
+.calculator-container{
+    padding: 30px 0;
+    justify-content: space-between;
+}
+.bmi-table-title,.calculator-title{
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+.bmi-chart{
+    margin-top: 50px;
+}
+.bmi-chart
+,th,td{
+    
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    text-align: left;
+
+    
+}
+th,td{
+    padding: 18px 42px;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+}
+.table-head{
+    font-size: 18px;
+    font-weight: 500px;
+    color: rgb(255, 255, 255);
+}
+.calculator{
+    margin-top: 50px;
+}
+.bmi-calculator-box{
+   
+    max-width: 500px;
+    height: auto;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    
+    
+
+}
+
+input,select{
+    padding: 14px 0px 14px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    overflow: hidden;
+    width: 100%;
+
+}
+option{
+    background: #00000000;
+    border-radius: 8px;
+    color: rgba(5, 0, 0, 0.976);
+}
+.full{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.btn-space{
+    margin-top: 20px;
 }
 
 /* media query Styles   */
@@ -289,14 +398,14 @@ text-align: left;
         display: block;
     }
 
-    .banner , .run-container{
+    .banner , .run-container,.calculator-container{
         flex-direction: column;
     }
 
-    .run-container{
+    .run-container,.bmi-calculator{
         height: auto;
     }
-
+    
     .banner-title{
         font-size: 2.5rem;
     }
@@ -333,6 +442,32 @@ text-align: left;
     .habits-card-container{
         grid-template-columns: repeat(1, 1fr);
     } 
+
+    .run-content{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .run-img{
+        width: 100%;
+        
+    }
+
+
+
+    /* bmi calculator here  */
+    th,td{
+        padding: 18px 22px;
+    }
+    .bmi-calculator-box{
+        width: 100%;
+    }
+    .bmi-calculator-box{
+        margin-top: 50px;
+        
+    }
 
     
 }
