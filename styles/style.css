@@ -99,7 +99,7 @@ margin-bottom: 10px;
     display: none;
 }
 
-.habits,.run-mile,.bmi{
+.habits,.run-mile,.bmi,.our-team{
     width: 100%;
     background: #000;
 }
@@ -209,7 +209,7 @@ text-align: left;
 
 
 
-.habit-content{
+.habit-content,.team-content{
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
@@ -384,6 +384,55 @@ option{
     margin-top: 20px;
 }
 
+
+
+/* our team member style here  */
+.team-members{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-top:30px;
+
+}
+
+.members{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    background-size: cover;     
+    background-position:top;  
+    background-repeat: no-repeat; 
+    width: 100%;                  
+    height: 250px;               
+    
+}
+.members::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
+  
+}
+
+.member-info{
+    position: absolute;
+    bottom: 0;
+    padding: 8px;
+    z-index: 2;
+    
+
+}
+.member-info h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 /* media query Styles   */
 
 @media screen and (max-width: 576px) {
@@ -439,7 +488,7 @@ option{
         font-size: 2rem;
     }
 
-    .habits-card-container{
+    .habits-card-container ,.team-members{
         grid-template-columns: repeat(1, 1fr);
     } 
 
