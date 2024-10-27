@@ -105,6 +105,7 @@ margin-bottom: 10px;
 }
 
 
+
 /* header banner styles  */
 .banner{
     margin-top: 30px;
@@ -299,9 +300,9 @@ text-align: left;
 
 .bmi-calculator{
     width: 100%;
-    margin: 60px auto;
+    margin: 60px auto 0 auto;
     background: rgb(34, 34, 34);
-    height: 500px;
+    
     
 }
 
@@ -387,6 +388,10 @@ option{
 
 
 /* our team member style here  */
+.our-team {
+    padding-top: 0 !important;
+
+}
 .team-members{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -433,6 +438,64 @@ option{
     font-size: 1.5rem;
     font-weight: 700;
 }
+
+/* footer style here  */
+
+.footer-container{
+    background: rgb(34, 34, 34);
+    width: 100%;
+    padding: 30px 0 10px 0;
+}
+
+.content{
+    width: 100%;
+    justify-content: space-between;
+}
+.foot-content1,.foot-content2{
+    flex: 1;
+}
+.foot-content1 h2{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.foot-content1 p{
+    padding-right: 120px;
+}
+.foot-content2{
+    justify-content: space-between;
+   
+
+}
+.foot-content h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+
+
+.foot-links{
+    list-style: none;
+}
+.foot-links li{
+    margin: 20px 0;
+}
+.foot-links li a{
+    text-decoration: none;
+     color:rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.copyright{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
 /* media query Styles   */
 
 @media screen and (max-width: 576px) {
@@ -447,7 +510,7 @@ option{
         display: block;
     }
 
-    .banner , .run-container,.calculator-container{
+    .banner , .run-container,.calculator-container,.content,.foot-content2{
         flex-direction: column;
     }
 
@@ -518,5 +581,13 @@ option{
         
     }
 
+
+
+    .foot-content1 p{
+        padding: 20px 20px 20px 0;
+    }
+
     
 }
+
+
